@@ -1,0 +1,50 @@
+/* New Tweet CSS */
+
+
+.new-tweet {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.new-tweet h2 {
+  flex: 1 100%;
+  margin: .5em;
+}
+
+.new-tweet label {
+  border-bottom: 1.5px solid black;
+  margin-bottom: 1em;
+}
+
+.new-tweet textarea {
+  width: 510px;
+  height: 40px;
+  resize: none;
+  border: 2px #f4f1ec solid;
+  outline: none;
+  background-color:#f4f1ec;
+  border-bottom: 2px solid black;
+  margin: .5em 0;
+}
+
+.new-tweet ::placeholder {
+  font-weight: bold;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.new-tweet button {
+  font-family: 'Bungee', sans-serif;
+  background-color: #4056A1;
+  color: white;
+  margin-right: 7.5em;
+}
+
+.new-tweet output {
+  font-family: 'Bungee', sans-serif;
+  margin-left: 7.5em;
+}

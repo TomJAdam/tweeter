@@ -1,0 +1,21 @@
+/* Header CSS */
+
+* {
+  margin: 0;
+}
+
+header {
+  height: 400px;
+  width: 100%;
+  padding: 1em;;
+  background-color: #F0CE37;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* classes */
