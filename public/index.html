@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="./styles/header.css" type="text/css" />
     <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/tweet-display.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,7 +35,7 @@
     </div>
     </nav>
 
-    <header>
+    <header class="main-header">
         <div>
             <img src="/images/profile-hex.png"> 
         </div>
@@ -57,6 +58,10 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+    </section>
+
+    <section id="tweets-container">
+      <!-- tweets go here -->
     </section>
 
     </main>

@@ -1,0 +1,61 @@
+/* Tweet display CSS */
+
+#tweets-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2em;
+}
+
+.tweet-display {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  border: 2px black solid;
+  margin: 1em 0;
+  padding: 1em;
+  opacity: 80%;
+}
+
+.tweet-display:hover {
+  box-shadow: 3px 3px rgb(133, 167, 179);
+  opacity: 100%;
+}
+
+.tweet-display:hover .tweet-handle {
+  opacity: 50%;
+}
+
+.tweet-display header {
+  flex: 1 75%;
+  display: flex;
+}
+
+.tweet-display footer {
+  flex: 3 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px black solid;
+  padding-top: .7em;
+  font-size: 70%;
+}
+
+.tweet-handle {
+  margin-top: 1em;
+  margin-right: 1em;
+  opacity: 0%;
+}
+
+.tweet-name {
+  margin-top: 1em;
+}
+
+.tweet-display img {
+  margin: .5em;
+}
+
+.tweet-body {
+  margin: 1em;
+  font-weight: bold;
+}
+

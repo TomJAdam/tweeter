@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-header {
+.main-header {
   height: 400px;
   width: 100%;
   padding: 1em;
@@ -12,7 +12,7 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
 }
 
-header div {
+.main-header div {
   display: flex;
   justify-content: center;
 }
