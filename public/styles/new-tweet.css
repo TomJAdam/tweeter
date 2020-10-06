@@ -12,19 +12,19 @@
   margin: .5em;
 }
 
-.new-tweet label {
+/* .new-tweet label {
   border-bottom: 1.5px solid black;
   margin-bottom: 1em;
-}
+} */
 
 .new-tweet textarea {
   width: 510px;
   height: 40px;
   resize: none;
-  border: 2px #f4f1ec solid;
+  border:#f4f1ec;
   outline: none;
   background-color:#f4f1ec;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(65, 64, 64);
   margin: .5em 0;
 }
 
