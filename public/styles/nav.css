@@ -15,6 +15,7 @@ nav {
   position: fixed;
   top: 0;
   overflow: hidden;
+  z-index: 1000;
 }
 
 nav span {
@@ -26,4 +27,12 @@ nav span {
 
 .nav-link {
   margin: 1.5em;
+}
+
+.scroll-down {
+  cursor: pointer;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
 }

@@ -20,6 +20,7 @@
 .tweet-display:hover {
   box-shadow: 3px 3px rgb(133, 167, 179);
   opacity: 100%;
+  transform: scale(1.005);
 }
 
 .tweet-display:hover .tweet-handle {
@@ -30,6 +31,10 @@
   flex: 1 75%;
   display: flex;
 }
+
+/* .user-avatar:hover {
+  transform: scale(1.1);
+} */
 
 .tweet-display footer {
   flex: 3 100%;
@@ -50,6 +55,10 @@
   margin-top: 1em;
 }
 
+/* .tweet-name:hover {
+  transform: scale(1.1);
+} */
+
 .tweet-display img {
   margin: .5em;
 }
@@ -57,5 +66,6 @@
 .tweet-body {
   margin: 1em;
   font-weight: bold;
+  flex: 100%
 }
 

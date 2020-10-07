@@ -2,7 +2,8 @@
 
 $(document).ready(function() {
   $("#tweet-text").keyup(function() {
-    const charCount = $(this).val().length;
+
+    const charCount = $(this).val().trim().length;
 
     $(this).closest(".new-tweet").find(".counter").text(140 - charCount);
 
@@ -12,4 +13,5 @@ $(document).ready(function() {
       $(this).closest(".new-tweet").find(".counter").css("color", "black");
     }
   }); 
+
 });

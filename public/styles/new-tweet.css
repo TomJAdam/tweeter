@@ -47,3 +47,8 @@
 .new-tweet output {
   font-family: 'Bungee', sans-serif;
 }
+
+.new-tweet button:hover {
+  background-color: #5c72b9;
+  cursor: pointer;
+}
