@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/header.css" type="text/css" />
     <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="./styles/tweet-display.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/up-arrow.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,19 +31,20 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span class="nav-logo">tweeter</span>
+      <span>tweeter</span>
       <div class="nav-link">
-      <p class="scroll-down"><b>Write</b> a new tweet</p>
+      <p><b>Write</b> a new tweet</p>
+      <img src="https://media3.giphy.com/media/Wtg8Bmgul1Qxc0otod/giphy.gif" height='60' width="60"/>
     </div>
     </nav>
 
     <header class="main-header">
         <div>
-            <img src="/images/profile-hex.png"> 
+            <img src="/images/Albus-Dumbledore-Front.png" height="250" width="250"> 
         </div>
         <br>
         <div>
-            <h2>Your Name</h2>
+            <h2>Albus Dumbledore</h2>
         </div>
   </header>
 
@@ -51,6 +53,7 @@
 
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
+      <div class="error-message"></div>
       <form action="/tweets" method="POST"> 
         <label for="tweet-text"><b>What are you humming about?</b></label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -64,6 +67,8 @@
     <section id="tweets-container">
       <!-- tweets go here -->
     </section>
+    <span class="float-logo">tweeter</span>
+    <div class="to-top"><img src="https://media3.giphy.com/media/Wtg8Bmgul1Qxc0otod/giphy.gif" alt="up-arrow" height="60px" width="60px"></div>
 
     </main>
   </body>

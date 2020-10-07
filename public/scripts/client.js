@@ -64,12 +64,13 @@ $(document).ready(function() {
   $(".new-tweet").find("form").submit(function(event) {
     event.preventDefault();
     if (parseInt($(this).closest(".new-tweet").find(".counter").val()) < 0) {
-      alert('Your Tweet is too long!');
+      $(this).closest(".new-tweet").find(".error-message").html('<h5>Your tweet is too long!</h5>').show('regular');
     } else if (parseInt($(this).closest(".new-tweet").find(".counter").val()) === 140) {
-      alert('There is no tweet here?');
+      $(this).closest(".new-tweet").find(".error-message").html('<h5>Nothing to tweet!</h5>').show('regular');
     } else {
       let serializedTweet = $(this).serialize();
       $.post('/tweets', serializedTweet).then(
+        $(this).closest(".new-tweet").find(".error-message ").slideUp('fast'),
         $(this).closest(".new-tweet").find("textarea").val(''),
         $(this).closest(".new-tweet").find(".counter").val(140),
         setTimeout(function() {

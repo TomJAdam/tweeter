@@ -1,0 +1,29 @@
+/* Up Button CSS */
+
+.to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: #4056A1;
+  border-radius: 50%;
+  padding: .6em;
+}
+
+.to-top:hover {
+  background-color: #5c72b9;
+}
+
+.to-top img {
+  transform: rotate(180deg);
+}
+
+.float-logo {
+  color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}

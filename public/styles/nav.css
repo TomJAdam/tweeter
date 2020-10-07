@@ -23,16 +23,19 @@ nav span {
   margin: 1.5em;
 }
 
+nav span:hover {
+  transform: scale(1.05);
+}
+
 /* Classes */
 
 .nav-link {
   margin: 1.5em;
-}
-
-.scroll-down {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
 }
 
-.nav-logo:hover {
-  transform: scale(1.05);
+.nav-link img {
+  align-self: center;
 }
