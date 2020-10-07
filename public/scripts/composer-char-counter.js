@@ -12,6 +12,6 @@ $(document).ready(function() {
     } else {
       $(this).closest(".new-tweet").find(".counter").css("color", "black");
     }
-  }); 
+  });
 
 });

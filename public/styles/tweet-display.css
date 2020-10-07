@@ -2,7 +2,7 @@
 
 #tweets-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
   margin: 2em;
 }
@@ -32,10 +32,6 @@
   display: flex;
 }
 
-/* .user-avatar:hover {
-  transform: scale(1.1);
-} */
-
 .tweet-display footer {
   flex: 3 100%;
   display: flex;
@@ -54,10 +50,6 @@
 .tweet-name {
   margin-top: 1em;
 }
-
-/* .tweet-name:hover {
-  transform: scale(1.1);
-} */
 
 .tweet-display img {
   margin: .5em;

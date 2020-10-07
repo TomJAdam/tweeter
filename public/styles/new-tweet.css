@@ -2,7 +2,6 @@
 
 
 .new-tweet {
-  text-align: center;
   display: flex;
   flex-flow: column wrap;
   width: 100%;
@@ -11,12 +10,12 @@
 .new-tweet h2 {
   flex: 1 100%;
   margin: .5em;
+  text-align: center;
 }
 
-/* .new-tweet label {
-  border-bottom: 1.5px solid black;
-  margin-bottom: 1em;
-} */
+.new-tweet label {
+text-align: left;
+}
 
 .new-tweet textarea {
   width: 100%;
