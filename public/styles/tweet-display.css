@@ -18,7 +18,7 @@
 }
 
 .tweet-display:hover {
-  box-shadow: 3px 3px rgb(133, 167, 179);
+  box-shadow: 4px 4px rgb(133, 167, 179);
   opacity: 100%;
   transform: scale(1.005);
 }

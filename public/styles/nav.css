@@ -19,8 +19,9 @@ nav {
 
 nav span {
   font-family: 'Bungee', sans-serif;
-  margin: 1.5em;
-  font-size: 100%;
+  margin-left: 1.5em;
+  margin-top: .95em;
+  font-size: 140%;
 }
 
 nav span:hover {

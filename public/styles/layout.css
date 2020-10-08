@@ -36,7 +36,7 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-  
+
   body {
     display: flex;
     flex-direction: row;
@@ -49,8 +49,10 @@ main {
 
   main {
     flex: 2 40%;
-    margin: 2em;
+    margin: 0em 2em;
     width: 50%;
+    height: 300vh;
   }
+
 }
 

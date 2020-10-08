@@ -1,15 +1,15 @@
 /* New Tweet CSS */
 
-
 .new-tweet {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
+  margin-top: 2em;
 }
 
 .new-tweet h2 {
   flex: 1 100%;
-  margin: .75em;
+  margin: 1em;
   text-align: center;
 }
 

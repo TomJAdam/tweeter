@@ -5,14 +5,13 @@
 }
 
 .main-header {
-  height: 400px;
+  height: 450px;
   width: 100%;
   padding: 1em;
   background-color: #F0CE37;
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
-}
-
-.main-header div {
+  border-bottom: 12px solid #4056A1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
