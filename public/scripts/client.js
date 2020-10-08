@@ -41,7 +41,7 @@ const createTweetElement = (data) => {
   return $tweet;
 };
 
-// Better comment here
+
 $(document).ready(function() {
 
   // renders tweets
@@ -72,12 +72,19 @@ $(document).ready(function() {
       $.post('/tweets', serializedTweet).then(
         $(this).closest(".new-tweet").find(".error-message ").slideUp('fast'),
         $(this).closest(".new-tweet").find("textarea").val(''),
-        $(this).closest(".new-tweet").find(".counter").val(140),
-        setTimeout(function() {
-          loadLastTweet();
-        }, 200));
+        $(this).closest(".new-tweet").find(".counter").val(140))
+        .then(loadLastTweet())
     }
   });
+
+  // Removes error messages if they are no longer valid
+  $(function() {
+    $("#tweet-text").keyup(function(e) { 
+      if (parseInt($(this).closest(".new-tweet").find(".counter").val()) >= 0 && parseInt($(this).closest(".new-tweet").find(".counter").val()) < 140) {
+        $(this).closest(".new-tweet").find(".error-message").slideUp('fast');
+      } 
+    }) 
+  })
 
 });
 
