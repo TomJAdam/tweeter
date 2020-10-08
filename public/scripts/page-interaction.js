@@ -6,13 +6,25 @@ $(document).ready(function() {
   //Write tweet scrolls to compose
   $(".nav-link").click(function() {
     if ($(window).width() > 1024) {
-      $('html, body').animate({
-        scrollTop: $(".nav-link").offset().top
-      }, 500, function() { $("#tweet-text").focus() });
+      if ($(window).scrollTop() > 100) {
+        $('html, body').animate({
+          scrollTop: $(".new-tweet").offset().top
+        }, 500, function() {
+          $("#tweet-text").focus();
+        });
+      } else {
+        $('html, body').animate({
+          scrollTop: $(".nav-link").offset().top
+        }, 500, function() {
+          $("#tweet-text").focus();
+        });
+      }
     } else {
       $('html, body').animate({
         scrollTop: $(".main-header").offset().top
-      }, 500, function() { $("#tweet-text").focus() });
+      }, 500, function() {
+        $("#tweet-text").focus();
+      });
     }
   });
   
@@ -32,11 +44,15 @@ $(document).ready(function() {
     if ($(window).width() > 1024) {
       $('html, body').animate({
         scrollTop: $("nav").offset().top
-      }, 500, function() { $("#tweet-text").focus() });
+      }, 500, function() {
+        $("#tweet-text").focus();
+      });
     } else {
       $('html, body').animate({
         scrollTop: $(".main-header").offset().top
-      }, 500, function() { $("#tweet-text").focus() });
+      }, 500, function() {
+        $("#tweet-text").focus();
+      });
     }
   });
 
@@ -47,11 +63,11 @@ $(document).ready(function() {
 
   // Removes error messages if they are no longer valid
   $(function() {
-    $("#tweet-text").keyup(function() { 
+    $("#tweet-text").keyup(function() {
       if (parseInt($(this).closest(".new-tweet").find(".counter").val()) >= 0 && parseInt($(this).closest(".new-tweet").find(".counter").val()) < 140) {
         $(this).closest(".new-tweet").find(".error-message").slideUp('fast');
-      } 
-    }) 
+      }
+    });
   });
   
   //allows enter key to submit tweet
@@ -62,7 +78,7 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).closest(".new-tweet").find("form").submit();
       }
-    })
+    });
   });
 
 });

@@ -1,6 +1,5 @@
 /* Nav CSS Styles */
 
-
 * {
   margin: 0;
 }
@@ -21,13 +20,12 @@ nav {
 nav span {
   font-family: 'Bungee', sans-serif;
   margin: 1.5em;
+  font-size: 100%;
 }
 
 nav span:hover {
   transform: scale(1.05);
 }
-
-/* Classes */
 
 .nav-link {
   margin: 1.5em;

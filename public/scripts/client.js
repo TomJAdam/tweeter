@@ -13,6 +13,7 @@ const escape = function(str) {
   return div.innerHTML;
 };
 
+//appends tweets to page
 const renderTweets = (tweets) => {
   if (tweets.length > 1) {
     for (const tweet of tweets) {
@@ -23,6 +24,7 @@ const renderTweets = (tweets) => {
   }
 };
 
+// creates tweet html
 const createTweetElement = (data) => {
   let $tweet = `
   <article class="tweet-display">
@@ -69,14 +71,16 @@ $(document).ready(function() {
       $(this).closest(".new-tweet").find(".error-message").html('<h5>Nothing to tweet!</h5>').show('regular');
     } else {
       let serializedTweet = $(this).serialize();
-      $.post('/tweets', serializedTweet).then(
-        $(this).closest(".new-tweet").find(".error-message ").slideUp('fast'),
-        $(this).closest(".new-tweet").find("textarea").val(''),
-        $(this).closest(".new-tweet").find(".counter").val(140))
-        setTimeout(() => {
-          loadLastTweet()
-        }, 150);
-        // .then(loadLastTweet())
+      $.post('/tweets', serializedTweet)
+      .then( () => {
+        $(this).closest(".new-tweet").find(".error-message").slideUp('fast');
+        $(this).closest(".new-tweet").find("textarea").val('');
+        $(this).closest(".new-tweet").find(".counter").val(140);
+      })
+      .then(loadLastTweet)
+      .catch( (error) => {
+        console.log('post failed!', error);
+      })
     }
   });
 
