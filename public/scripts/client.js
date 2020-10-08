@@ -34,7 +34,7 @@ const createTweetElement = (data) => {
   <p class="tweet-body">${escape(data.content.text)}</p>
   <footer>
     <p>${(new Date(data.created_at)).toString().slice(4, 15)}</p>
-    <p>🆒 🆗 📶</p>
+    <p class="footer-icons">🆒 🆗 📶</p>
   </footer>
   </article>
   `;
@@ -60,7 +60,7 @@ $(document).ready(function() {
     }, "json");
   };
 
-  // posts tweets to database
+  // posts tweets to database then loads most recent to page
   $(".new-tweet").find("form").submit(function(event) {
     event.preventDefault();
     if (parseInt($(this).closest(".new-tweet").find(".counter").val()) < 0) {
@@ -73,18 +73,12 @@ $(document).ready(function() {
         $(this).closest(".new-tweet").find(".error-message ").slideUp('fast'),
         $(this).closest(".new-tweet").find("textarea").val(''),
         $(this).closest(".new-tweet").find(".counter").val(140))
-        .then(loadLastTweet())
+        setTimeout(() => {
+          loadLastTweet()
+        }, 150);
+        // .then(loadLastTweet())
     }
   });
-
-  // Removes error messages if they are no longer valid
-  $(function() {
-    $("#tweet-text").keyup(function(e) { 
-      if (parseInt($(this).closest(".new-tweet").find(".counter").val()) >= 0 && parseInt($(this).closest(".new-tweet").find(".counter").val()) < 140) {
-        $(this).closest(".new-tweet").find(".error-message").slideUp('fast');
-      } 
-    }) 
-  })
 
 });
 

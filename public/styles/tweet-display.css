@@ -61,3 +61,11 @@
   flex: 100%
 }
 
+.footer-icons {
+  opacity: 0%;
+}
+
+.tweet-display:hover .footer-icons {
+  opacity: 100%;
+}
+

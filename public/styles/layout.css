@@ -40,3 +40,29 @@ main {
   margin: auto;
 }
 
+@media only screen and (min-width: 1024px) {
+  
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-header {
+    margin: 2em;
+    flex: 1 25%;
+  }
+
+  main {
+    flex: 2 40%;
+    margin: 2em;
+    width: 50%;
+  }
+}
+
+/* 
+@media only screen and (max-width: 1024px) {
+  nav {
+    background-color: #F0CE37;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  }
+} */
