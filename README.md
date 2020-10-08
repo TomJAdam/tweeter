@@ -6,6 +6,9 @@ It uses HTML, CSS, JS, jQuery and AJAX to deliver a simplified twitter experienc
 
 ## Screenshots
 
+!["Desktop view"](https://github.com/TomJAdam/tweeter/blob/master/docs/desktop-view.png?raw=true)
+!["Tablet view"](https://github.com/TomJAdam/tweeter/blob/master/docs/tablet-view.png?raw=true)
+!["Desktop view"](https://github.com/TomJAdam/tweeter/blob/master/docs/tweets.png?raw=true)
 
 ## Getting Started
 
